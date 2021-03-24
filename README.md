@@ -4,7 +4,7 @@ Project page for the paper:
 
 [*Intentonomy: a Dataset and Study towards Human Intent Understanding*](https://arxiv.org/abs/2011.05558) **CVPR 2021** (**oral**)
 
-![teaser](/Users/menglin/Documents/2020intent/intentonomy/images/teaser.png)
+![teaser](images/teaser.png)
 
 
 
