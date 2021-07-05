@@ -2,8 +2,6 @@
 
 ![ontology](images/ontology.gif)
 
-[TOC]
-
 Intentonomy dataset contains Intentonomy dataset has 12,740 training, 498 val, 1217 test images. Each image contains one or multiple intent categories. We select 28 labels from a general human motive taxonomy used in [psychology research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172279). There are 9 super-categories in total (in black box), namely “virtues”, “self-fulfill”, “openness to experience”, “security and belonging”, “power”, “health”, “family”, “ambition and ability”, ”financial and occupational success”.
 
 ## Download the data

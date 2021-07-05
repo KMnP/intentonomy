@@ -10,10 +10,6 @@ Project page for the paper:
 
 
 
-[TOC]
-
-
-
 ## 1️⃣ Intentonomy Dataset
 
 ![ontology](images/ontology.gif)
@@ -38,7 +34,15 @@ To investigate the intangible and subtle connection between visual content and i
 
 ## 3️⃣ Intent Recognition Baseline
 
-We introduce a framework with the help of weaklysupervised localization and an auxiliary hashtag modality that is able to narrow the gap between human and machine understanding of images. We provide the results of the our baseline model below.
+We introduce a framework with the help of weaklysupervised localization and an auxiliary hashtag modality that is able to narrow the gap between human and machine understanding of images. We provide the results of the our baseline model below. 
+
+### Localization loss implementation
+
+We provide the implementation of the proposed localization loss in `loc_loss.py`, where the default parameters are the one we used in the paper. Download the masks for our images (518M) [here](https://cornell.box.com/s/dp53z6iofaa8zzg1tg04tmipob8h57v7) and update the `MASK_ROOT` in the script.
+
+Note that you will need `cv2` and `pycocotools` libraries to use `Localizationloss`. Other notes are included in the `loc_loss.py`.
+
+### Identifying intent classes
 
 We break down the intent classes into different subsets based on:
 
@@ -46,6 +50,8 @@ We break down the intent classes into different subsets based on:
 2. **difficulty**: it measures how much the VISUAL outperforms achieves than the RANDOM results (“easy”, “medium” and “hard”). 
 
 See Appendix A in our paper for details.
+
+scp menglin@10.100.115.133:/checkpoints/menglin/h2/checkpoint/menglin/projects/2020intent/coco_maskrcnn.json coco_maskrcnn.json
 
 ### Baseline results
 
