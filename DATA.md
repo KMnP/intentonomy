@@ -35,7 +35,9 @@ We also encourage you to check out [`Unsplash Full Dataset 1.1.0`](https://githu
 
 ## Data Format
 
-We follow the annotation format of the [COCO dataset](http://mscoco.org/dataset/#download) and the majority of [FGVC](http://fgvc.org/) challenges. The annotations are stored in the [JSON format](http://www.json.org/) and are organized as follows:
+We follow the annotation format of the [COCO dataset](http://mscoco.org/dataset/#download) and the majority of [FGVC](http://fgvc.org/) challenges. The annotations are stored in the [JSON format](http://www.json.org/) and are organized as follows.
+
+> :exclamation:**NOTE**: the soft probability in training annotations are the result of normalization across annotators. Out of the three annotators, if `x`of them think this image belong to one label with id `m`, then this label become `x/3` in the annotation at position `m`. Each intent label was annotated independently for all images. Thus the vector does not sum to 1. 
 
 ```bash
 {
@@ -68,7 +70,7 @@ annotation{
   "id" : int,
   "image_id" : str,
   "category_ids" : [int],            # in val/test annotations
-  "category_ids_softprob": [float],  # in training annotations
+  "category_ids_softprob": [float],  # in training annotations. 
 }
 ```
 
