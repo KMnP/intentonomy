@@ -28,7 +28,7 @@ Images that already exist will not be downloaded again, so the script can resume
 ```bash
 # ANN_ROOT=""
 # IMG_ROOT=""
-python download_images.py --anno-root $ANN_ROOT --image-root $IMG_ROOT
+python download_data.py --anno-root $ANN_ROOT --image-root $IMG_ROOT
 ```
 
 We also encourage you to check out [`Unsplash Full Dataset 1.1.0`](https://github.com/unsplash/datasets)  if you would like to use the provided metadata such as colors and keywords.
